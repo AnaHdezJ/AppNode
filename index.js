@@ -8,7 +8,10 @@ app.get('/', (req, res) =>{
 
 const port =3000
 
-
+setTimeout(function() {
+    console.log('Closing application');
+    process.exit()
+}, 3000);
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
 
